@@ -1,0 +1,6 @@
+File Names,Node Names
+../stock_data/djia_2012.csv,djia
+../stock_data/nasdaq_all.csv,nasdaq
+../stock_data/russel2000_all.csv,russel2000
+../bond_data/govt&corp_2012.csv,govt&corp
+../bond_data/tbonds_2012.csv,tbonds
