@@ -8,7 +8,7 @@ import datetime
 
 class DataSet:
     def __init__(self,filename: str, start: str, end: str,name:str):
-        self.data = self.cleanStockData(filename,start,end,name) 
+        self.std_data, self.min_max_data, self.data= self.cleanStockData(filename,start,end,name) 
         
     def cleanStockData(self, file_name : str, start_date_str: str, end_date_str: str, name: str) -> pd.DataFrame:
         #Function Delivers a data frame of soley closing data, normalized
@@ -79,9 +79,9 @@ class DataSet:
         
         #Normalize data:
         std_norm_values = (stock_data[name]-stock_data[name].mean())/stock_data[name].std()    
-        #min_max_norm_values = (stock_data[name]-stock_data[name].min())/(stock_data[name].max()-stock_data[name].min())
+        min_max_norm_values = (stock_data[name]-stock_data[name].min())/(stock_data[name].max()-stock_data[name].min())
         
         
         
-        return std_norm_values
+        return std_norm_values, min_max_norm_values, stock_data
         

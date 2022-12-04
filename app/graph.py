@@ -8,7 +8,7 @@ from clean import *
 
 class Graph:
     def __init__(self, filename: str , start: str, end: str):
-        #read dictionary
+        ## initialize variables
         self.start = start
         self.end = end
         self.datasets = []
@@ -16,15 +16,21 @@ class Graph:
         self.corr_vec = pd.DataFrame
     
     def buildDataSets(self):
+        ## create a list from given test data file 
+        ##traverse and create DataSet object, and extract data 
+        ## kinda convoluted but I expect us to use different data for different reasons so we can add more functions to the data set class when needed
+        
         file_list  = pd.read_csv(self.filename)
         for i in range(len(file_list)):
-            self.datasets.append(DataSet(file_list.iloc[i,0],self.start,self.end,file_list.iloc[i,1]).data)
+            self.datasets.append(DataSet(file_list.iloc[i,0],self.start,self.end,file_list.iloc[i,1]).std_data)
         
     def mergeLists(self)->pd.DataFrame:
+        ## merge list of dataframe data into one dataframe
         data_merge = reduce(lambda x,y: pd.merge(x,y,left_index=True,right_index=True),self.datasets) 
         return data_merge
 
 
     def calcCorellationVectors(self):
+        ## finaly calculate correlation vector
         self.datasets = self.mergeLists()
         self.corr_vec = self.datasets.corr()
