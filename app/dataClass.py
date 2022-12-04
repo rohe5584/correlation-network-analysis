@@ -15,8 +15,6 @@ class DataSet:
         [self.std_norm, self.min_max_norm, self.stand] = cleanStockData(type+filename,start,end) 
         
 
-
-
 russel = DataSet("russel2000_all.csv","2012-12-01","2022-09-01",STOCKPATH)
 djia = DataSet("djia_2012.csv","2012-12-01","2022-09-01",STOCKPATH)
 nas = DataSet("nasdaq_all.csv","2012-12-01","2022-09-01",STOCKPATH)
