@@ -12,3 +12,7 @@ graph = Graph(sys.argv[1],"2012-12-01","2022-09-01")
 graph.buildDataSets()
 graph.calcCorellationVectors()
 print(graph.corr_vec)
+
+#plt.plot(graph.datasets["cBond"].index,graph.datasets['cBond'])
+#plt.plot(graph.datasets["epi"].index,graph.datasets['epi'])
+#plt.show()

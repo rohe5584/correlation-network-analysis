@@ -1,4 +1,5 @@
 File Names,Node Names
+../epi_data/epi_interpolated.csv,epi
 ../stock_data/djia_2012.csv,djia
 ../stock_data/nasdaq_all.csv,nasdaq
 ../stock_data/russel2000_all.csv,russel2000
