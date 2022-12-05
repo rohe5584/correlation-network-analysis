@@ -1,0 +1,51 @@
+Stocks:
+	NASDAQ: https://www.wsj.com/market-data/quotes/index/COMP/historical-prices
+	DJIA: https://www.wsj.com/market-data/quotes/index/DJIA/historical-prices
+	Russell-2000: https://www.wsj.com/market-data/quotes/index/RUT/historical-prices
+	S&P500: https://www.wsj.com/market-data/quotes/index/SPX/historical-prices 
+
+Bonds:
+	Treasury bond: https://www.spglobal.com/spdji/en/indices/fixed-income/sp-us-treasury-bond-index/#overview
+	Treasury bill: https://www.spglobal.com/spdji/en/indices/fixed-income/sp-us-treasury-bill-index/#overview
+	Municipal: https://www.spglobal.com/spdji/en/indices/fixed-income/sp-municipal-bond-index/#overview
+	Corporate: https://www.spglobal.com/spdji/en/indices/fixed-income/sp-500-bond-index/#overview
+
+Commodities:
+	Metals:
+		Aluminum: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-aluminum/#overview
+		Gold: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-gold/#overview
+		Lead: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-lead/#overview
+		Nickel: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-nickel/#overview
+		Silver: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-silver/#overview
+		Zinc: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-zinc/#overview
+		Copper: https://www.spglobal.com/spdji/en/indices/commodities/sp-gsci-copper/#overview
+	Energy:
+		Crude: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-brent-crude/#overview
+		Natural Gas: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-natural-gas/#overview
+		Petroleum: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-petroleum/#overview
+		Biofuel: https://www.spglobal.com/spdji/en/indices/commodities/sp-gsci-biofuel/#overview
+	Agriculture:
+		Cattle: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-all-cattle/#overview
+		Cocoa: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-cocoa/#overview
+		Coffee: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-coffee/#overview
+		Corn: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-corn/#overview
+		Cotton: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-cotton/#overview
+		Lean Hogs: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-lean-hogs/#overview
+		Soybeans: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-soybeans/#overview
+		Sugar: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-sugar/#overview
+		Wheat: https://www.spglobal.com/spdji/en/indices/commodities/dow-jones-commodity-index-all-wheat/#overview
+
+EPI:
+	Inflation rate 1913-2022, monthly: https://beta.bls.gov/dataViewer/view/timeseries/CUUR0000SA0
+	Unemployment rate 1948-2022, monthly: https://data.bls.gov/cgi-bin/surveymost?bls (Select Unemployment Rate (Seasonally Adjusted) - LNS14000000)
+	Gdp 1947-2022, quarterly: https://apps.bea.gov/iTable/?reqid=19&step=2&isuri=1&categories=survey#eyJhcHBpZCI6MTksInN0ZXBzIjpbMSwyLDMsM10sImRhdGEiOltbImNhdGVnb3JpZXMiLCJTdXJ2ZXkiXSxbIk5JUEFfVGFibGVfTGlzdCIsIjUiXSxbIkZpcnN0X1llYXIiLCIxOTI5Il0sWyJMYXN0X1llYXIiLCIyMDIyIl0sWyJTY2FsZSIsIi05Il0sWyJTZXJpZXMiLCJRIl1dfQ==
+	Budget Deficet:
+		Monthly 2015-2022: https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-outlays-and-the-deficit-surplus-of-the-u-s-government
+		Monthly 1998-2022: https://www.fiscal.treasury.gov/reports-statements/mts/previous.html
+	GDP Percent Change: https://data.bls.gov/timeseries/CUUR0000SA0L1E?output_view=pct_12mths 
+
+Things to write about in report:
+	Linear regression for EPI
+	Raw EPI vs Weighted EPI
+
+Usage: cd into app folder: python prod.py ../data_lists/testdata1.csv
