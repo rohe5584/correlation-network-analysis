@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from typing import List
 import datetime
+import pickle
 from functools import reduce
 from clean import *
 
@@ -17,7 +18,7 @@ class Graph:
     
     def buildDataSets(self):
         ## create a list from given test data file 
-        ##traverse and create DataSet object, and extract data 
+        ## traverse and create DataSet object, and extract data 
         ## kinda convoluted but I expect us to use different data for different reasons so we can add more functions to the data set class when needed
         
         file_list  = pd.read_csv(self.filename)
@@ -27,6 +28,8 @@ class Graph:
     def mergeLists(self)->pd.DataFrame:
         ## merge list of dataframe data into one dataframe
         data_merge = reduce(lambda x,y: pd.merge(x,y,left_index=True,right_index=True),self.datasets) 
+        self.datasets = data_merge
+        
         return data_merge
 
 
@@ -34,3 +37,7 @@ class Graph:
         ## finaly calculate correlation vector
         self.datasets = self.mergeLists()
         self.corr_vec = self.datasets.corr()
+    
+    def saveObjectToFile(self, filename):
+        with open(filename, 'wb') as outp:  # Overwrites any existing file.
+            pickle.dump(self, outp, pickle.HIGHEST_PROTOCOL)

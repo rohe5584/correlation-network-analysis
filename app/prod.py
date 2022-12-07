@@ -6,6 +6,7 @@ import datetime
 from clean import *
 from graph import *
 
+
 import sys
 
 graph = Graph(sys.argv[1],"2012-12-01","2022-09-01")
