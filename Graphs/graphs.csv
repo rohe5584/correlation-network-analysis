@@ -1,3 +1,8 @@
 File Names,Node Names
-../stock_data/djia_2012.csv,djia
+../
 ../epi_data/epi_interpolated.csv,epi
+../epi_data/inflationClean.csv,inflation
+../epi_data/unemploymentClean.csv,unemployment
+../epi_data/gdpClean.csv,gdp
+../epi_data/gdpChangeClean.csv,gdpChange
+../epi_data/deficitClean.csv,budgetdeficit
