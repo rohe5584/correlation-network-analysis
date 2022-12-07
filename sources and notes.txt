@@ -45,7 +45,8 @@ EPI:
 	GDP Percent Change: https://data.bls.gov/timeseries/CUUR0000SA0L1E?output_view=pct_12mths 
 
 Things to write about in report:
-	Linear regression for EPI
+	Interpolation for EPI
 	Raw EPI vs Weighted EPI
+	EPI Macro
 
 Usage: cd into app folder: python prod.py ../data_lists/testdata1.csv
