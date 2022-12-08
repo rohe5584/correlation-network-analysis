@@ -35,7 +35,7 @@ class Graph:
 
     def calcCorellationVectors(self):
         ## finaly calculate correlation vector
-        self.datasets = self.mergeLists()
+        # self.datasets = self.mergeLists()
         self.corr_vec = self.datasets.corr()
     
     def saveObjectToFile(self, filename):
