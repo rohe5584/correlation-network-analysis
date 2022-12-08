@@ -27,3 +27,5 @@ negative_weighted_corr_network = graph.graph_weighted_edges(negative_corr_networ
 graph.visualizeNetwork(negative_weighted_corr_network, 1)
 graph.visualizeNetwork(positive_weighted_corr_network, 0)
 #graph.visualizeNetwork(negative_corr_network)
+
+graph.corr_vec.to_csv('vectors.csv', index=False)

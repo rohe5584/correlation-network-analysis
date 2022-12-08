@@ -1,5 +1,9 @@
 File Names,Node Names
 ../epi_data/epi_interpolated.csv,EPIScore
+../epi_data/inflationClean.csv,Inflation
+../epi_data/unemploymentClean.csv,Unemployment
+../epi_data/gdpClean.csv,GDP
+../epi_data/deficitClean.csv,BudgetDeficit
 ../stock_data/djia_2012.csv,DJIA
 ../stock_data/nasdaq_all.csv,NASDAQ
 ../stock_data/russel2000_all.csv,Russell2000
